@@ -1,0 +1,60 @@
+body {
+    background-color: gray;
+    text-align: center;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    grid-row: 1;
+    padding: 10px;
+}
+
+form {
+    display: block;
+    text-align: left;
+    padding: 10px;
+}
+
+form table {
+    border: 1px solid black;
+}
+
+#result {
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#result table {
+    margin: auto;
+}
+
+#result table, #result th, #result td {
+    border: 1px solid black;
+}
+
+#result tr:first-child {
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+}
+
+#result td:first-child {
+    background-color: aqua;
+    position: sticky;
+    left: 0;
+}
