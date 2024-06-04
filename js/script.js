@@ -1,5 +1,20 @@
+/* Ed Alderman
+ * JS for Homework 3 
+ *
+ * This computes a multiplacation table 
+ * from user entered min and max values 
+ * for both columns and rows.
+ * 
+ * It leverages an array for ease of computation.
+ */
+
+
+// render the multiplcation table 
+// with the default form values 
+// when the page is loaded
 window.onload = run;
 
+// helper to make a table row from an array
 function rowFromArray(array) {
     let row = document.createElement("tr");
 
@@ -36,7 +51,7 @@ function run() {
            result.replaceChildren();
            let message = document.createElement("h2");
            message.className = "errorMessage";
-           let messageText = document.createTextNode("Please only enter integers between X and Y");
+           let messageText = document.createTextNode("Please only enter integers");
            message.appendChild(messageText);
            result.appendChild(message);
             return;
@@ -49,7 +64,7 @@ function run() {
             result.replaceChildren();
             let message = document.createElement("h2");
             message.className = "errorMessage";
-            let messageText = document.createTextNode("Please only enter integers between X and Y");
+            let messageText = document.createTextNode("Please ensure the range between min and max does not exceed 300");
             message.appendChild(messageText);
             result.appendChild(message);
             return;
@@ -82,15 +97,4 @@ function run() {
         bodyRow.prepend(td);
         table.appendChild(bodyRow);
     }
-//    table.appendChild(tbody);
-    // style
-    //table.style.border = "solid", "black";
-    //table.getElementsByTagName("td").style.border = "solid", "black";
 }
-
-//TODO: add keypress listener
-//TODO: error checking
-    // not a number
-    //number too big
-//TODO: change to submit button instead of button
-//TODO: refactor to create whole table instead of just adding to it

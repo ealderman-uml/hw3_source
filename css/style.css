@@ -1,3 +1,20 @@
+/*
+    Ed Alderman
+    CSS for Homework 3
+
+    This is a VERY simple stylesheet for homework 3
+    It divides the page into three rows:
+        a header,
+        a form,
+        and a space to render the multiplaction table.
+
+    The first row and first column of the multiplcation table
+    stay in place while scrolling and are colored to highlight this.
+
+    This is and exceedingly rough looking application.
+    I ran out of time to make it more attractive.
+*/
+
 body {
     background-color: gray;
     text-align: center;
